@@ -1,0 +1,110 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: rebeccapurple;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0;
+  min-height: 100vh;
+  font-family: "Poppins", sans-serif;
+}
+
+.pw-container {
+  background-color: #2e0c50;
+  width: 400px;
+  -webkit-box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.pw-header {
+  padding: 1rem;
+}
+
+.pw-header .pw {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #451c6d;
+  font-size: 1.5rem;
+  position: relative;
+  height: 70px;
+  width: 100%;
+  overflow: auto;
+  padding: 1rem;
+}
+
+.pw-header .pw button {
+  position: absolute;
+  border: none;
+  color: white;
+  background-color: #1d0238;
+  font-family: inherit;
+  padding: 0.25rem;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  cursor: pointer;
+  -webkit-transition: opacity 0.2s ease, -webkit-transform 0.2s ease;
+  transition: opacity 0.2s ease, -webkit-transform 0.2s ease;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+  transition: opacity 0.2s ease, transform 0.2s ease, -webkit-transform 0.2s ease;
+  -webkit-transform: translateX(0, -50%);
+          transform: translateX(0, -50%);
+}
+
+.pw-header .pw button:hover {
+  opacity: 1;
+  -webkit-transform: translateX(0, -80%);
+          transform: translateX(0, -80%);
+}
+
+.pw-body {
+  padding: 0 1rem 1rem;
+}
+
+.form-control {
+  color: #eee;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0.75rem 0;
+}
+
+.form-control input:focus {
+  outline: none;
+}
+
+.generate {
+  background-color: #ecb602;
+  border: none;
+  color: rebeccapurple;
+  cursor: pointer;
+  display: block;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 0.75rem;
+  margin-top: 1rem;
+  width: 100%;
+}
+
+.generate:focus {
+  outline: none;
+}
+/*# sourceMappingURL=index.css.map */

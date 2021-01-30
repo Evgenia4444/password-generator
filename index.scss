@@ -1,0 +1,89 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rebeccapurple;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    min-height: 100vh;
+    font-family: "Poppins", sans-serif;
+}
+
+.pw-container {
+    background-color: rgb(46, 12, 80);
+    width: 400px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.pw-header {
+    padding: 1rem;
+
+    .pw {
+        display: flex;
+        align-items: center;
+        background-color: rgb(69, 28, 109);
+        font-size: 1.5rem;
+        position: relative;
+        height: 70px;
+        width: 100%;
+        overflow: auto;
+        padding: 1rem;
+
+        button {
+            position: absolute;
+            border: none;
+            color: white;
+            background-color: rgb(29, 2, 56);
+            font-family: inherit;
+            padding: 0.25rem;
+            bottom: 0;
+            right: 0;
+            opacity: 0;
+            cursor: pointer;
+            transition: opacity 0.2s ease, transform 0.2s ease;
+            transform: translateX(0, -50%);
+
+            &:hover {
+                opacity: 1;
+                transform: translateX(0, -80%);
+            }
+        }
+    }
+}
+
+.pw-body {
+    padding: 0 1rem 1rem;
+}
+
+.form-control {
+    color: #eee;
+    display: flex;
+    justify-content: space-between;
+    margin: 0.75rem 0;
+
+    input:focus {
+        outline: none;
+    }
+}
+
+.generate {
+    
+    background-color: #ecb602;
+    border: none;
+    color: rebeccapurple;
+    cursor: pointer;
+    display: block;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 0.75rem;
+    margin-top: 1rem;
+    width: 100%;
+
+    &:focus {
+        outline: none;
+    }
+}
